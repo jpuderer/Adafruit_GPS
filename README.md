@@ -15,6 +15,11 @@ using MTK33x9 chipset
 These modules use TTL serial to communicate, 2 pins are required to
 interface.
 
+NOTE: That if you are lucky enough to be using an ESP32 based board with hardware based serial there
+is now support for an interrupt driven RX callback that can be used to receive the NMEA data.  This will
+*greatly* reduced the risk of missing characters resulting in an invalid NMEA sentence.
+------> https://github.com/espressif/arduino-esp32/pull/6134
+
 Adafruit invests time and resources providing this open source code,
 please support Adafruit and open-source hardware by purchasing
 products from Adafruit!
